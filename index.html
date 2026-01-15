@@ -245,63 +245,436 @@
       </div>
     </section>
 
-  <section class="Exp" id="Certif">
+  <section class="certif" id="Certif">
     <div class="row">
       <h2>Certifications</h2>
-      <div class="exp__boxes">
+      
+      <!-- Filters Section -->
+      <div class="certif__filters">
+        <span class="certif__filter-label">Filtrer par :</span>
+        <button class="certif__filter-badge certif__filter-badge--active" data-filter="all">
+          Toutes <span class="certif__count" id="count-all">21</span>
+        </button>
+        <button class="certif__filter-badge" data-filter="microsoft">
+          Microsoft Azure
+        </button>
+        <button class="certif__filter-badge" data-filter="security">
+          Sécurité & Réseaux
+        </button>
+        <button class="certif__filter-badge" data-filter="management">
+          Management
+        </button>
+        <button class="certif__filter-badge" data-filter="applied-skills">
+          Applied Skills
+        </button>
+      </div>
 
-        <div class="exp__box">
-          <div class="exp__text">
-            <h3>Certifications Microsoft / Azure</h3>
-            <ul class="exp__list">
-              <li><a href="https://learn.microsoft.com/api/credentials/share/en-us/BeaulieuEric-4815/E123B4A68AA3A968?sharingId=10F2570FA8049AD5">SC-100</a> - Cybersecurity Architect Expert - 12/2022</li>
-              <li><a href="https://learn.microsoft.com/api/credentials/share/en-us/BeaulieuEric-4815/1721301A4A0EA28A?sharingId=10F2570FA8049AD5">AZ-500</a> - Azure Security Engineer Associate - 01/2024</li>
-              <li><a href="https://learn.microsoft.com/api/credentials/share/en-us/BeaulieuEric-4815/9FF0B8104D9C76EE?sharingId=10F2570FA8049AD5">AZ-700</a> - Azure Network Engineer Associate - 06/2023</li>
-              <li><a href="https://learn.microsoft.com/api/credentials/share/en-us/BeaulieuEric-4815/8422BEF025FC92A5?sharingId=10F2570FA8049AD5">SC-300</a> - Identity and Access Administrator Associate - 12/2022</li>
-              <li><a href="https://learn.microsoft.com/api/credentials/share/en-us/BeaulieuEric-4815/24AD45DECDC0AB25?sharingId=10F2570FA8049AD5">AZ-104</a> - Azure Administrator Associate - 06/2023</li>
-              <li><a href="https://learn.microsoft.com/api/credentials/share/en-us/BeaulieuEric-4815/D0167E8BAD251CEE?sharingId=10F2570FA8049AD5">SC-900</a> - Security, Compliance, and Identity Fundamentals - 06/2022</li>
-              <li><a href="https://learn.microsoft.com/api/credentials/share/en-us/BeaulieuEric-4815/8B25DFBA2E597C7D?sharingId=10F2570FA8049AD5">AZ-900</a> - Azure Fundamentals - 06/2022 </li>
-            </ul>
+      <!-- Certifications Grid -->
+      <div class="certif__grid">
+        
+        <!-- Microsoft Azure Certifications -->
+        <div class="certif__card" data-category="microsoft">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--blue">
+              <span>🛡️</span>
+            </div>
+            <span class="certif__badge">Expert</span>
           </div>
+          <h3 class="certif__title">SC-100</h3>
+          <p class="certif__desc">Cybersecurity Architect Expert</p>
+          <div class="certif__info">
+            <p>🏢 Microsoft Azure</p>
+            <p>📅 Décembre 2022</p>
+          </div>
+          <a href="https://learn.microsoft.com/api/credentials/share/en-us/BeaulieuEric-4815/E123B4A68AA3A968?sharingId=10F2570FA8049AD5" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
         </div>
 
-        <div class="work__box">
-          <div class="work__text">
-            <h3>Management de la sécurité</h3>
-            <ul class="work__list">
-              <li>ISO 27001:2013 - Lead Auditor - 06/2017 </li>
-            </ul>
+        <div class="certif__card" data-category="microsoft">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--blue">
+              <span>🔒</span>
+            </div>
+            <span class="certif__badge">Associate</span>
           </div>
+          <h3 class="certif__title">AZ-500</h3>
+          <p class="certif__desc">Azure Security Engineer Associate</p>
+          <div class="certif__info">
+            <p>🏢 Microsoft Azure</p>
+            <p>📅 Janvier 2024</p>
+          </div>
+          <a href="https://learn.microsoft.com/api/credentials/share/en-us/BeaulieuEric-4815/1721301A4A0EA28A?sharingId=10F2570FA8049AD5" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
         </div>
 
-        <div class="work__box">
-          <div class="work__text">
-            <h3>Certifications sécurité & réseaux</h3>
-            <ul class="work__list">
-              <li><a href="https://www.credly.com/badges/42459b3a-3c68-42a9-bfb2-6de55b7d6bb4/public_url">GHAS</a> - GitHub Advanced Security- 06/2025 </li>
-              <li><a href="https://www.credly.com/badges/df1e3bf1-ee02-4e4e-912d-cd5626301b13/public_url">Fortinet FCA</a> - Fortinet Certified Associate Cybersecurity - 09/2024</li>
-              <li><a href="https://www.credly.com/badges/ec18ed0b-a029-47aa-97db-ecc57a380f19/public_url">Fortinet FCF</a> - Fortinet Certified Fundamentals Cybersecurity - 09/2024</li>
-              <li><a href="https://www.credly.com/badges/a3e792c4-cd74-4138-8fbc-f3ca8fe6a311/public_url">Aviatrix ACE</a> - Multicloud Network Operations Specialty - 03/2024 </li>
-              <li><a href="https://eu.badgr.com/public/assertions/FSNBCpUSQ7Kx2G1S3SeYaA?identity__email=eric.beaulieu@gmail.com">Altered Security</a> - Introduction to Azure Penetration Testing - 12/2021 </li>
-              <li><a href="https://edu.globalcyberalliance.org/certificates/l7heltjpbc"> Global Cyber Alliance</a>  -	Understanding DMARC - 09/2021</li>
-
-            </ul>
+        <div class="certif__card" data-category="microsoft">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--blue">
+              <span>🌐</span>
+            </div>
+            <span class="certif__badge">Associate</span>
           </div>
+          <h3 class="certif__title">AZ-700</h3>
+          <p class="certif__desc">Azure Network Engineer Associate</p>
+          <div class="certif__info">
+            <p>🏢 Microsoft Azure</p>
+            <p>📅 Juin 2023</p>
+          </div>
+          <a href="https://learn.microsoft.com/api/credentials/share/en-us/BeaulieuEric-4815/9FF0B8104D9C76EE?sharingId=10F2570FA8049AD5" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
         </div>
 
-        <div class="work__box">
-          <div class="work__text">
-            <h3>Microsoft Applied Skills</h3>
-            <ul class="work__list">
-              <li><a href="https://learn.microsoft.com/api/credentials/share/fr-fr/BeaulieuEric-4815/3C4AF7D8DB5A452D?sharingId=10F2570FA8049AD5" >Administrer Active Directory Domain Services</a></li>
-              <li><a href="https://learn.microsoft.com/api/credentials/share/fr-fr/BeaulieuEric-4815/AC9AE7FB0C5660D9?sharingId=10F2570FA8049AD5" >Déployer des conteneurs en utilisant Azure Kubernetes Service</a></li>
-              <li><a href="https://learn.microsoft.com/api/credentials/share/fr-fr/BeaulieuEric-4815/C6EEB1B907555EEA?sharingId=10F2570FA8049AD5" >Déployer et configurer Azure Monitor</a></li>
-              <li><a href="https://learn.microsoft.com/api/credentials/share/fr-fr/BeaulieuEric-4815/64BCD63D74B65FB8?sharingId=10F2570FA8049AD5" >Sécuriser les services et charges de travail Azure avec Microsoft Defender pour le cloud</a></li>
-              <li><a href="https://learn.microsoft.com/api/credentials/share/fr-fr/BeaulieuEric-4815/3312F7649A055A0D?sharingId=10F2570FA8049AD5" >Sécuriser le stockage pour Azure Files et Stockage Blob Azure</a></li>
-              <li><a href="https://learn.microsoft.com/api/credentials/share/fr-fr/BeaulieuEric-4815/ADA39C346A3E567A?sharingId=10F2570FA8049AD5" >Configurer l’accès sécurisé à vos charges de travail en utilisant des réseaux Azure</a></li>
-            </ul>
+        <div class="certif__card" data-category="microsoft">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--blue">
+              <span>🔑</span>
+            </div>
+            <span class="certif__badge">Associate</span>
           </div>
+          <h3 class="certif__title">SC-300</h3>
+          <p class="certif__desc">Identity and Access Administrator Associate</p>
+          <div class="certif__info">
+            <p>🏢 Microsoft Azure</p>
+            <p>📅 Décembre 2022</p>
+          </div>
+          <a href="https://learn.microsoft.com/api/credentials/share/en-us/BeaulieuEric-4815/8422BEF025FC92A5?sharingId=10F2570FA8049AD5" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
         </div>
+
+        <div class="certif__card" data-category="microsoft">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--blue">
+              <span>☁️</span>
+            </div>
+            <span class="certif__badge">Associate</span>
+          </div>
+          <h3 class="certif__title">AZ-104</h3>
+          <p class="certif__desc">Azure Administrator Associate</p>
+          <div class="certif__info">
+            <p>🏢 Microsoft Azure</p>
+            <p>📅 Juin 2023</p>
+          </div>
+          <a href="https://learn.microsoft.com/api/credentials/share/en-us/BeaulieuEric-4815/24AD45DECDC0AB25?sharingId=10F2570FA8049AD5" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
+        </div>
+
+        <div class="certif__card" data-category="microsoft">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--blue">
+              <span>✅</span>
+            </div>
+            <span class="certif__badge">Fundamentals</span>
+          </div>
+          <h3 class="certif__title">SC-900</h3>
+          <p class="certif__desc">Security, Compliance, and Identity Fundamentals</p>
+          <div class="certif__info">
+            <p>🏢 Microsoft Azure</p>
+            <p>📅 Juin 2022</p>
+          </div>
+          <a href="https://learn.microsoft.com/api/credentials/share/en-us/BeaulieuEric-4815/D0167E8BAD251CEE?sharingId=10F2570FA8049AD5" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
+        </div>
+
+        <div class="certif__card" data-category="microsoft">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--blue">
+              <span>⚡</span>
+            </div>
+            <span class="certif__badge">Fundamentals</span>
+          </div>
+          <h3 class="certif__title">AZ-900</h3>
+          <p class="certif__desc">Azure Fundamentals</p>
+          <div class="certif__info">
+            <p>🏢 Microsoft Azure</p>
+            <p>📅 Juin 2022</p>
+          </div>
+          <a href="https://learn.microsoft.com/api/credentials/share/en-us/BeaulieuEric-4815/8B25DFBA2E597C7D?sharingId=10F2570FA8049AD5" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
+        </div>
+
+        <!-- Security & Network Certifications -->
+        <div class="certif__card" data-category="security">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--purple">
+              <span>💻</span>
+            </div>
+            <span class="certif__badge">Advanced</span>
+          </div>
+          <h3 class="certif__title">GHAS</h3>
+          <p class="certif__desc">GitHub Advanced Security</p>
+          <div class="certif__info">
+            <p>🏢 GitHub</p>
+            <p>📅 Juin 2025</p>
+          </div>
+          <a href="https://www.credly.com/badges/42459b3a-3c68-42a9-bfb2-6de55b7d6bb4/public_url" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
+        </div>
+
+        <div class="certif__card" data-category="security">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--red">
+              <span>🔐</span>
+            </div>
+            <span class="certif__badge">Associate</span>
+          </div>
+          <h3 class="certif__title">Fortinet FCA</h3>
+          <p class="certif__desc">Fortinet Certified Associate Cybersecurity</p>
+          <div class="certif__info">
+            <p>🏢 Fortinet</p>
+            <p>📅 Septembre 2024</p>
+          </div>
+          <a href="https://www.credly.com/badges/df1e3bf1-ee02-4e4e-912d-cd5626301b13/public_url" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
+        </div>
+
+        <div class="certif__card" data-category="security">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--red">
+              <span>🛡️</span>
+            </div>
+            <span class="certif__badge">Fundamentals</span>
+          </div>
+          <h3 class="certif__title">Fortinet FCF</h3>
+          <p class="certif__desc">Fortinet Certified Fundamentals Cybersecurity</p>
+          <div class="certif__info">
+            <p>🏢 Fortinet</p>
+            <p>📅 Septembre 2024</p>
+          </div>
+          <a href="https://www.credly.com/badges/ec18ed0b-a029-47aa-97db-ecc57a380f19/public_url" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
+        </div>
+
+        <div class="certif__card" data-category="security">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--orange">
+              <span>🌍</span>
+            </div>
+            <span class="certif__badge">Specialty</span>
+          </div>
+          <h3 class="certif__title">Aviatrix ACE</h3>
+          <p class="certif__desc">Multicloud Network Operations Specialty</p>
+          <div class="certif__info">
+            <p>🏢 Aviatrix</p>
+            <p>📅 Mars 2024</p>
+          </div>
+          <a href="https://www.credly.com/badges/a3e792c4-cd74-4138-8fbc-f3ca8fe6a311/public_url" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
+        </div>
+
+        <div class="certif__card" data-category="security">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--indigo">
+              <span>🐛</span>
+            </div>
+            <span class="certif__badge">Pentest</span>
+          </div>
+          <h3 class="certif__title">Altered Security</h3>
+          <p class="certif__desc">Introduction to Azure Penetration Testing</p>
+          <div class="certif__info">
+            <p>🏢 Altered Security</p>
+            <p>📅 Décembre 2021</p>
+          </div>
+          <a href="https://eu.badgr.com/public/assertions/FSNBCpUSQ7Kx2G1S3SeYaA?identity__email=eric.beaulieu@gmail.com" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
+        </div>
+
+        <div class="certif__card" data-category="security">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--teal">
+              <span>📧</span>
+            </div>
+            <span class="certif__badge">Email Security</span>
+          </div>
+          <h3 class="certif__title">DMARC</h3>
+          <p class="certif__desc">Understanding DMARC</p>
+          <div class="certif__info">
+            <p>🏢 Global Cyber Alliance</p>
+            <p>📅 Septembre 2021</p>
+          </div>
+          <a href="https://edu.globalcyberalliance.org/certificates/l7heltjpbc" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
+        </div>
+
+        <!-- Management Certification -->
+        <div class="certif__card" data-category="management">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--green">
+              <span>💼</span>
+            </div>
+            <span class="certif__badge">Lead Auditor</span>
+          </div>
+          <h3 class="certif__title">ISO 27001:2013</h3>
+          <p class="certif__desc">Lead Auditor</p>
+          <div class="certif__info">
+            <p>🏢 ISO</p>
+            <p>📅 Juin 2017</p>
+          </div>
+          <button disabled class="certif__btn certif__btn--disabled">
+            Pas de lien de vérification
+          </button>
+        </div>
+
+        <!-- Microsoft Applied Skills -->
+        <div class="certif__card" data-category="applied-skills">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--cyan">
+              <span>🖥️</span>
+            </div>
+            <span class="certif__badge">Applied Skills</span>
+          </div>
+          <h3 class="certif__title">Active Directory</h3>
+          <p class="certif__desc">Administrer Active Directory Domain Services</p>
+          <div class="certif__info">
+            <p>🏢 Microsoft Applied Skills</p>
+            <p>📅 Récent</p>
+          </div>
+          <a href="https://learn.microsoft.com/api/credentials/share/fr-fr/BeaulieuEric-4815/3C4AF7D8DB5A452D?sharingId=10F2570FA8049AD5" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
+        </div>
+
+        <div class="certif__card" data-category="applied-skills">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--cyan">
+              <span>📦</span>
+            </div>
+            <span class="certif__badge">Applied Skills</span>
+          </div>
+          <h3 class="certif__title">Azure Kubernetes</h3>
+          <p class="certif__desc">Déployer des conteneurs avec Azure Kubernetes Service</p>
+          <div class="certif__info">
+            <p>🏢 Microsoft Applied Skills</p>
+            <p>📅 Récent</p>
+          </div>
+          <a href="https://learn.microsoft.com/api/credentials/share/fr-fr/BeaulieuEric-4815/AC9AE7FB0C5660D9?sharingId=10F2570FA8049AD5" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
+        </div>
+
+        <div class="certif__card" data-category="applied-skills">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--cyan">
+              <span>📊</span>
+            </div>
+            <span class="certif__badge">Applied Skills</span>
+          </div>
+          <h3 class="certif__title">Azure Monitor</h3>
+          <p class="certif__desc">Déployer et configurer Azure Monitor</p>
+          <div class="certif__info">
+            <p>🏢 Microsoft Applied Skills</p>
+            <p>📅 Récent</p>
+          </div>
+          <a href="https://learn.microsoft.com/api/credentials/share/fr-fr/BeaulieuEric-4815/C6EEB1B907555EEA?sharingId=10F2570FA8049AD5" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
+        </div>
+
+        <div class="certif__card" data-category="applied-skills">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--cyan">
+              <span>🔒</span>
+            </div>
+            <span class="certif__badge">Applied Skills</span>
+          </div>
+          <h3 class="certif__title">Microsoft Defender</h3>
+          <p class="certif__desc">Sécuriser avec Microsoft Defender pour le cloud</p>
+          <div class="certif__info">
+            <p>🏢 Microsoft Applied Skills</p>
+            <p>📅 Récent</p>
+          </div>
+          <a href="https://learn.microsoft.com/api/credentials/share/fr-fr/BeaulieuEric-4815/64BCD63D74B65FB8?sharingId=10F2570FA8049AD5" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
+        </div>
+
+        <div class="certif__card" data-category="applied-skills">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--cyan">
+              <span>💾</span>
+            </div>
+            <span class="certif__badge">Applied Skills</span>
+          </div>
+          <h3 class="certif__title">Azure Storage Security</h3>
+          <p class="certif__desc">Sécuriser le stockage Azure Files et Blob</p>
+          <div class="certif__info">
+            <p>🏢 Microsoft Applied Skills</p>
+            <p>📅 Récent</p>
+          </div>
+          <a href="https://learn.microsoft.com/api/credentials/share/fr-fr/BeaulieuEric-4815/3312F7649A055A0D?sharingId=10F2570FA8049AD5" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
+        </div>
+
+        <div class="certif__card" data-category="applied-skills">
+          <div class="certif__card-header">
+            <div class="certif__icon certif__icon--cyan">
+              <span>🌐</span>
+            </div>
+            <span class="certif__badge">Applied Skills</span>
+          </div>
+          <h3 class="certif__title">Azure Networking</h3>
+          <p class="certif__desc">Configurer l'accès sécurisé avec réseaux Azure</p>
+          <div class="certif__info">
+            <p>🏢 Microsoft Applied Skills</p>
+            <p>📅 Récent</p>
+          </div>
+          <a href="https://learn.microsoft.com/api/credentials/share/fr-fr/BeaulieuEric-4815/ADA39C346A3E567A?sharingId=10F2570FA8049AD5" 
+             target="_blank" 
+             class="certif__btn">
+            Vérifier le diplôme →
+          </a>
+        </div>
+
+      </div>
     </div>
   </section>
 
